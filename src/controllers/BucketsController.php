@@ -3,7 +3,7 @@
 namespace patmoshosting\craftpatmoss3\controllers;
 
 use Craft;
-use patmos\craftpatmoss3\Fs;
+use patmoshosting\craftpatmoss3\Fs;
 use craft\helpers\App;
 use craft\web\Controller as BaseController;
 use yii\web\Response;

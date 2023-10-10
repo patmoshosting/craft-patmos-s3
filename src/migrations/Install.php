@@ -8,7 +8,7 @@
 namespace patmoshosting\craftpatmoss3\migrations;
 
 use Craft;
-use patmos\craftpatmoss3\Fs;
+use patmoshosting\craftpatmoss3\Fs;
 use craft\db\Migration;
 use craft\services\ProjectConfig;
 
@@ -34,7 +34,7 @@ class Install extends Migration
 
         foreach ($fsConfigs as $uid => $config) {
             if (
-                in_array($config['type'], ['patmos\craftpatmoss3\Volume', Fs::class]) &&
+                in_array($config['type'], ['patmoshosting\craftpatmoss3\Volume', Fs::class]) &&
                 isset($config['settings']) &&
                 is_array($config['settings'])
             ) {
