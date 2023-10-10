@@ -2,6 +2,7 @@
   "name": "patmoshosting/craft-patmos-s3",
   "description": "Patmos S3 integration for Craft CMS",
   "type": "craft-plugin",
+  "version": "1.0.0",
   "keywords": [
     "aws",
     "cms",
@@ -43,7 +44,7 @@
   "extra": {
     "name": "Patmos S3",
     "handle": "craft-patmos-s3",
-    "documentationUrl": "https://github.com/craftcms/aws-s3/blob/master/README.md"
+    "documentationUrl": "https://github.com/patmoshosting/craft-patmos-s3/blob/main/README.md"
   },
   "config": {
     "platform": {

@@ -2,7 +2,7 @@
 
 <h1 align="center">Patmos S3 for Craft CMS</h1>
 
-This plugin provides a [Patmos S3](https://s3.patmoshosting.com/) integration for [Craft CMS](https://craftcms.com/) that is based off the aws-s3 default plugin for craft.
+This plugin provides a [Patmos S3](https://s3.patmoshosting.com/) integration for [Craft CMS](https://craftcms.com/) that is based off the [aws-s3](https://github.com/craftcms/aws-s3) default plugin for craft.
 
 ## Requirements
 
