@@ -18,7 +18,7 @@ class AwsS3Bundle extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@patmos/craftpatmoss3/resources';
+    public $sourcePath = '@patmoshosting/craftpatmoss3/resources';
 
     /**
      * @inheritdoc
