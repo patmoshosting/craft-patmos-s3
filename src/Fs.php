@@ -7,7 +7,7 @@ declare(strict_types=1);
  * @license MIT
  */
 
-namespace patmos\craftpatmoss3;
+namespace patmoshosting\craftpatmoss3;
 
 use Aws\CloudFront\CloudFrontClient;
 use Aws\CloudFront\Exception\CloudFrontException;

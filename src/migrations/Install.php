@@ -5,7 +5,7 @@
  * @license MIT
  */
 
-namespace patmos\craftpatmoss3\migrations;
+namespace patmoshosting\craftpatmoss3\migrations;
 
 use Craft;
 use patmos\craftpatmoss3\Fs;

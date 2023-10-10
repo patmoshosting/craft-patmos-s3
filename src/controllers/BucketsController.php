@@ -1,6 +1,6 @@
 <?php
 
-namespace patmos\craftpatmoss3\controllers;
+namespace patmoshosting\craftpatmoss3\controllers;
 
 use Craft;
 use patmos\craftpatmoss3\Fs;

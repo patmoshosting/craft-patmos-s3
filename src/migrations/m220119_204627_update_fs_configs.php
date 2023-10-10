@@ -1,6 +1,6 @@
 <?php
 
-namespace patmos\craftpatmoss3\migrations;
+namespace patmoshosting\craftpatmoss3\migrations;
 
 use Craft;
 use craft\db\Migration;

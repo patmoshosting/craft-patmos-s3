@@ -1,6 +1,6 @@
 {
-  "name": "patmos/craft-patmos-s3",
-  "description": "patmos S3 integration for Craft CMS",
+  "name": "patmoshosting/craft-patmos-s3",
+  "description": "Patmos S3 integration for Craft CMS",
   "type": "craft-plugin",
   "keywords": [
     "aws",
@@ -32,7 +32,7 @@
   },
   "autoload": {
     "psr-4": {
-      "patmos\\craftpatmoss3\\": "src/"
+      "patmoshosting\\craftpatmoss3\\": "src/"
     }
   },
   "scripts": {

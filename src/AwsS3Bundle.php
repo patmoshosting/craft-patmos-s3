@@ -5,7 +5,7 @@
  * @license MIT
  */
 
-namespace patmos\craftpatmoss3;
+namespace patmoshosting\craftpatmoss3;
 
 use craft\web\assets\cp\CpAsset;
 use yii\web\AssetBundle;

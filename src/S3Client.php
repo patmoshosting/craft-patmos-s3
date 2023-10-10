@@ -5,7 +5,7 @@
  * @license MIT
  */
 
-namespace patmos\craftpatmoss3;
+namespace patmoshosting\craftpatmoss3;
 
 use Aws\CommandInterface;
 use Aws\S3\Exception\S3Exception;

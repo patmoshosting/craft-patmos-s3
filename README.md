@@ -2,7 +2,7 @@
 
 <h1 align="center">Patmos S3 for Craft CMS</h1>
 
-This plugin provides a [Patmos S3](https://aws.amazon.com/s3/) integration for [Craft CMS](https://craftcms.com/) that is based off the aws-s3 default plugin for craft.
+This plugin provides a [Patmos S3](https://s3.patmoshosting.com/) integration for [Craft CMS](https://craftcms.com/) that is based off the aws-s3 default plugin for craft.
 
 ## Requirements
 
@@ -25,10 +25,10 @@ Open your terminal and run the following commands:
 cd /path/to/my-project.test
 
 # tell Composer to load the plugin
-composer require patmos/craft-patmos-s3
+composer require patmoshosting/craft-patmos-s3
 
 # tell Craft to install the plugin
-./craft plugin/install acraft-patmos-s3
+./craft plugin/install craft-patmos-s3
 ```
 
 ## Setup

@@ -60,19 +60,17 @@
                 placeholder: 'Bucket'|t('aws-s3')
             }) }}
         </div>
-        <div class="bsm-manual{% if fs.bucketSelectionMode == 'choose' %} hidden{% endif %} flex-grow">
+        <div class="bsm-manual hidden flex-grow" style="display: none;">
             {{ forms.autosuggest({
                 label: "Region"|t('aws-s3'),
                 class: 'ltr s3-manualRegion',
                 name: 'manualRegion',
                 suggestEnvVars: true,
-                value: fs.region,
-                placeholder: 'Region'|t('aws-s3')
+                value: 'us-east-1',
             }) }}
         </div>
     </div>
-
-    <input type="hidden" name="region" class="s3-region" value="{{ fs.region }}" />
+    <input type="hidden" name="region" class="s3-region" value="us-east-1" />
 {% endset %}
 
 
@@ -120,58 +118,5 @@
 }) }}
 
 <hr />
-{% set cacheInput %}
-    {% set expires = (fs.expires|length > 0 ? fs.expires|split(' ') : ['', ''])%}
-
-    <div class="flex">
-        <div>
-            {{ forms.text({
-                id: 'expiresAmount',
-                value: expires[0],
-                size: 2,
-                class: 's3-expires-amount'
-            }) }}
-        </div>
-        {{ forms.select({
-            id: 'expiresPeriod',
-            options: periods,
-            value: expires[1],
-            class: 's3-expires-period'
-        }) }}
-    </div>
-    {{ forms.hidden({
-        name: "expires",
-        value: fs.expires,
-        class: "expires-combined"
-    }) }}
-{% endset %}
-
-{{ forms.field({
-    label: "Cache Duration"|t,
-    instructions: "The Cache-Control duration that assets should be uploaded to the cloud with.",
-    id: 'cacheDuration',
-}, cacheInput) }}
-
-{{ forms.autosuggestField({
-    label: "CloudFront Distribution ID"|t('aws-s3'),
-    instructions: "If you’re using CloudFront as CDN for your assets, enter the distribution ID here so Assets can purge the files from CDN."|t('aws-s3'),
-    id: 'cfDistributionId',
-    class: 'ltr',
-    name: 'cfDistributionId',
-    suggestEnvVars: true,
-    value: fs.cfDistributionId,
-    errors: fs.getErrors('cfDistributionId')
-}) }}
-
-{{ forms.autosuggestField({
-    label: "CloudFront Path Prefix"|t('aws-s3'),
-    instructions: "If you’re using CloudFront as CDN for your assets and have configured subfolders or custom behaviors, enter the path prefix Craft should use when invalidating files."|t('aws-s3'),
-    id: 'cfPrefix',
-    class: 'ltr',
-    name: 'cfPrefix',
-    suggestEnvVars: true,
-    value: fs.cfPrefix,
-    errors: fs.getErrors('cfPrefix')
-}) }}
 
 {% do view.registerAssetBundle("patmos\\craftpatmoss3\\AwsS3Bundle") %}
